@@ -9,7 +9,11 @@ main() {
     pkg_install "${evm_pkgs[@]}"
     install_node_lts
     npm install -g solc > /dev/null
+    
     pip_install "${evm_pip[@]}"
+    # jsut test string to change hashsum
+    pip_install "slither-analyzer"
+    
     install_foundry
 }
 main
